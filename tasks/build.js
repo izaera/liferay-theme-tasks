@@ -22,7 +22,7 @@ module.exports = function(options) {
 
 	gulp.task('build', function(cb) {
 		runSequence(
-			'build:clean',
+			// 'build:clean',
 			'build:base',
 			'build:src',
 			'build:web-inf',
@@ -36,7 +36,7 @@ module.exports = function(options) {
 			'build:remove-old-css-dir',
 			'build:fix-at-directives',
 			'build:r2',
-			'build:war',
+			// 'build:war',
 			cb
 		);
 	});
